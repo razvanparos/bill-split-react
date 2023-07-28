@@ -1,0 +1,175 @@
+*{
+    font-weight: 700;
+    /* border: 1px solid red; */
+}
+.main-div{
+    background-color: white;
+    width: 1000px;
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.left-div{
+    /* border: 1px solid red; */
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+.right-div{
+    /* border: 1px solid green; */
+    background-color: var(--Verydarkcyan);
+    width: 47%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0px;
+}
+.bill-div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.bill-div input{
+    padding: 5px 25px;
+    display: flex;
+    text-align: right;
+    font-weight: 700;
+    border-radius: 5px;
+    outline: none;
+    border: 0px;
+    background-color: var(--Verylightgrayishcyan);
+    /* border: 2px solid var(--Lightgrayishcyan); */
+    color: var(--Verydarkcyan);
+    font-size: 1.2rem;
+
+}
+.bill-div input:focus{
+    box-shadow: 0px 0px 0px 2px var(--strongcyan);
+
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+p{
+    color: var(--Darkgrayishcyan);
+    font-weight: 700;
+}
+
+.percentages{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+   
+}
+
+.percentages button{
+    width: 30%;
+    cursor: pointer;
+    background-color: var(--Verydarkcyan);
+    color: white;
+    font-size: 20px;
+    border: 0px;
+    border-radius: 5px;
+    padding: 5px;
+    
+}
+.percentages button:focus{
+    background-color:var(--strongcyan);
+    color: var(--Verydarkcyan);
+    
+}
+.percentages input{
+    width: 30%;
+    text-align: center;
+    font-size: 20px;
+    border: 0px;
+    background-color: var(--Verylightgrayishcyan);
+    border-radius: 5px;
+    outline: none;
+    color: var(--Verydarkcyan);
+}
+.percentages input:focus::placeholder{
+    color: transparent;
+}
+.percentages input:focus{
+
+    text-align: end;
+    border: 2px solid var(--strongcyan);
+}
+.nr-people{
+    display: flex;
+    flex-direction: column;
+    
+}
+.nr-people input{
+    padding: 5px 25px;
+    display: flex;
+    text-align: right;
+    font-weight: 700;
+    border-radius: 5px;
+    outline: none;
+    border: 0px;
+    background-color: var(--Verylightgrayishcyan);
+    /* border: 2px solid var(--Lightgrayishcyan); */
+    color: var(--Verydarkcyan);
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+.amounts-div{
+    width: 100%;
+    padding: 0px 40px;
+}
+.tip-amount, .total-person{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+@media (max-width:755px) {
+    .main-div{
+        flex-direction: column;
+        height: fit-content;
+        width: fit-content;
+        align-items: center;
+        padding: 20px 10px;
+    }
+    .left-div{
+        width: 100%;
+        row-gap: 40px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .right-div{
+        width: 100%;
+    }
+    .select-tip{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .percentages{
+        justify-content: center;
+    }
+
+    .percentages button{
+        width: 46%;
+       
+        
+    }
+    .percentages input{
+        width: 46%;
+       
+        
+    }
+}
